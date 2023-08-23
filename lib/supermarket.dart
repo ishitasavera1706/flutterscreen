@@ -16,14 +16,6 @@ List priceList=[
   "2000",
   "150",
 ];
-List timeList=[
-  "60 Minutes",
-  "80 Minutes",
-  "120 Minutes",
-  "90 Minutes",
-  "180 Minutes",
-  "150 Minutes",
-];
 List ratList=[
   "4.5",
   "3.5",

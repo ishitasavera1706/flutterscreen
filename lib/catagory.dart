@@ -13,10 +13,10 @@ class HomeScreen extends StatelessWidget {
     "Electonics"
   ];
   List catColors=[
-    Colors.amber,
+    Colors.redAccent,
     Colors.green,
-    Colors.blue,
-    Colors.pinkAccent,
+    Colors.brown,
+    Colors.teal,
     Colors.redAccent,
     Colors.blueGrey,
   ];
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(top: 15,left: 15,right: 15,bottom: 10),
             decoration: BoxDecoration(
-                color: Colors.red,
+                color: Colors.black,
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(20),
                   bottomLeft: Radius.circular(20),
