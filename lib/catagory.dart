@@ -1,9 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterscreen/Outlet.dart';
+import 'package:flutterscreen/supermarket.dart';
 
 //Catagory
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
+
+
   List catNames=[
     "Catagory",
     "Cold Drink",
@@ -12,6 +24,7 @@ class HomeScreen extends StatelessWidget {
     "Mobile Accessories",
     "Electonics"
   ];
+
   List catColors=[
     Colors.redAccent,
     Colors.green,
@@ -20,6 +33,7 @@ class HomeScreen extends StatelessWidget {
     Colors.redAccent,
     Colors.blueGrey,
   ];
+
   List<Icon> catIcons=[
     Icon(Icons.category,color: Colors.white,size: 30,),
     Icon(Icons.severe_cold,color: Colors.white,size: 30,),
@@ -28,31 +42,34 @@ class HomeScreen extends StatelessWidget {
     Icon(Icons.earbuds,color: Colors.white,size: 30,),
     Icon(Icons.laptop_mac,color: Colors.white,size: 30,),
   ];
+
   List imgList=[
     "70off",
     "90off",
     "70off",
     "90off",
   ];
+
   List vidList=[
     "10-50 % OFF",
     "UP to 9% OFF",
     "flat 50% OFF",
     "flat 90% OFF",
   ];
+
   List itemList=[
     "Mobile Accessories",
     "Electonics",
     "Houshold",
     "Grocessary",
   ];
+
   List dayList=[
     "2 days left",
     "5 days left",
     "3 days left",
     "1 days left",
   ];
-
 
   @override
   Widget build(BuildContext context) {
@@ -265,21 +282,6 @@ class HomeScreen extends StatelessWidget {
             ],
             ),
           ),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        iconSize: 35,
-        selectedItemColor: Colors.deepPurple,
-        selectedFontSize: 18,
-        unselectedItemColor: Colors.grey,
-        unselectedFontSize: 18,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label : 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_cart),label : 'Cart'),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Wishlist'),
-          BottomNavigationBarItem(icon: Icon(Icons.person),label : 'Account'),
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterscreen/bottamNav.dart';
 import 'Outlet.dart';
 import 'catagory.dart';
 import 'supermarket.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  HomeScreen(),
+      home:  BottomNavigationScreen(),
     );
   }
 }
